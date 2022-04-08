@@ -135,7 +135,16 @@ namespace WindowsFormsApp2
             }
             else
             {
-                string check = IEmp.authentifierEns(EnsPseudo.Text, EnsPassword.Text);
+                string check = null;
+                try
+                {
+                     check = IEmp.authentifierEns(EnsPseudo.Text, EnsPassword.Text);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
                 if (check !=null)
                 {
                     LoginInfo.pseudo = EnsPseudo.Text;

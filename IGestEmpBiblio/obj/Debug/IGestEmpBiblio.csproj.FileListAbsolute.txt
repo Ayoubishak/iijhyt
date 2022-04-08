@@ -11,7 +11,7 @@ E:\programming project\Gestion Biblo\GestEmpBibliothèque\IGestEmpBiblio\bin\Deb
 E:\programming project\Gestion Biblo\GestEmpBibliothèque\IGestEmpBiblio\bin\Debug\IGestEmpBiblio.pdb
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\IGestEmpBiblio\bin\Debug\IGestEmpBiblio.dll
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\IGestEmpBiblio\bin\Debug\IGestEmpBiblio.pdb
-E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\IGestEmpBiblio\obj\Debug\IGestEmpBiblio.csprojAssemblyReference.cache
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\IGestEmpBiblio\obj\Debug\IGestEmpBiblio.csproj.CoreCompileInputs.cache
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\IGestEmpBiblio\obj\Debug\IGestEmpBiblio.dll
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\IGestEmpBiblio\obj\Debug\IGestEmpBiblio.pdb
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\IGestEmpBiblio\obj\Debug\IGestEmpBiblio.csprojAssemblyReference.cache

@@ -43,20 +43,19 @@ namespace Serveur
                     img = input.GetString("img");
 
                     ovrg = new ouvrage(codeBarre, titre, typeOvrg, auteur, img, theme);
-                    if (ovrg == null)
-                    {
-                        Console.WriteLine("orvg null");
-                    }
-
+                
                     listOvrg.Add(ovrg);
 
-
                 }
-                conn.Close();
+             
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }finally
+            {
+                if(conn!=null)
+                    conn.Close();
             }
 
             return listOvrg;
@@ -332,25 +331,26 @@ namespace Serveur
                     try
                     {
                         c.Open();
+                        String now = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        String after1 = DateTime.Now.AddDays(1).ToString("yyyy-MM-dd HH:mm:ss");
+
+
+
+                        cmd.CommandText = "insert into emprunt values (@id,@codeBarre,@dateEmp,@dateFinEmp,0);";
+                        cmd.Parameters.Add("@ID", MySqlDbType.VarChar).Value = id;
+                        cmd.Parameters.Add("@codeBarre", MySqlDbType.Int32).Value = codeBarre;
+                        cmd.Parameters.Add("@dateEmp", MySqlDbType.VarChar).Value = now;
+                        cmd.Parameters.Add("@dateFinEmp", MySqlDbType.VarChar).Value = after1;
+                       // cmd.Parameters.Add("@confirmer", MySqlDbType.VarChar).Value = 0;
+                        cmd.ExecuteNonQuery();
+                        c.Close();
+                        return "réservation à été faite avec succés";
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(e);
+                        throw e;
                     }
-                    String now = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                    String after1 = DateTime.Now.AddDays(1).ToString("yyyy-MM-dd HH:mm:ss");
-
-
-
-                    cmd.CommandText = "insert into emprunt values (@ID,@codeBarre,@dateEmp,@dateFinEmp,@confirmer);";
-                    cmd.Parameters.Add("@ID", MySqlDbType.VarChar).Value = id;
-                    cmd.Parameters.Add("@codeBarre", MySqlDbType.Int32).Value = codeBarre;
-                    cmd.Parameters.Add("@dateEmp", MySqlDbType.VarChar).Value = now;
-                    cmd.Parameters.Add("@dateFinEmp", MySqlDbType.VarChar).Value = after1;
-                    cmd.Parameters.Add("@confirmer", MySqlDbType.VarChar).Value = 0;
-                    cmd.ExecuteNonQuery();
-                    c.Close();
-                    return "réservation à été faite avec succés";
+                    
                 }
 
 
@@ -363,81 +363,71 @@ namespace Serveur
         public emprunteur ConsulterCompte(String ID)
         {
             MySqlConnection c = Conx.GetDBConnection();
+            enseignant ens = new enseignant();
+            etudiant etud = new etudiant();
             try
             {
                 c.Open();
+                MySqlCommand cmd = c.CreateCommand();
+              
+
+                cmd.CommandText = "select * from etudiant where numCarte='" + ID + "';";
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    c.Close();
+                    c.Open();
+
+                    cmd = c.CreateCommand();
+                    cmd.CommandText = "select ID,nom,prenom,pseudo,password,empNconfirme,specialite,niveau,email from etudiant,emprunteur where etudiant.numCarte=emprunteur.ID and numCarte='" + ID + "';";
+                    reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        etud.ID1 = reader.GetString(0);
+                        etud.Nom = reader.GetString(1);
+                        etud.Prenom = reader.GetString(2);
+                        etud.Pseudo = reader.GetString(3);
+                        etud.Password = reader.GetString(4);
+                        etud.EmpNConfirme = reader.GetByte(5);
+
+                        etud.Specialite = reader.GetString(6);
+                        etud.Niveau = reader.GetString(7);
+                        etud.Email = reader.GetString(8);
+                    }
+                    c.Close();
+                    return etud;
+
+                }
+                else
+                {
+                    c.Close();
+
+                    c.Open();
+
+                    cmd = c.CreateCommand();
+                    cmd.CommandText = "select ID,nom,prenom,pseudo,password,empNconfirme,grade,email from enseignant,emprunteur where enseignant.matricule=emprunteur.ID and matricule='" + ID + "';";
+                    reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        ens.ID1 = reader.GetString(0);
+                        ens.Nom = reader.GetString(1);
+                        ens.Prenom = reader.GetString(2);
+                        ens.Pseudo = reader.GetString(3);
+                        ens.Password = reader.GetString(4);
+                        ens.EmpNConfirme = reader.GetInt16(5);
+                        ens.Grade = reader.GetString(6);
+                        ens.Email = reader.GetString(7);
+
+                    }
+                    c.Close();
+                    return ens;
+                }
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-            }
-
-            MySqlCommand cmd = c.CreateCommand();
-            enseignant ens = new enseignant();
-            etudiant etud = new etudiant();
-
-            cmd.CommandText = "select * from etudiant where numCarte='" + ID + "';";
-            MySqlDataReader reader = cmd.ExecuteReader();
-
-            if (reader.Read())
-            {
-                c.Close();
-                try
-                {
-                    c.Open();
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                }
-                cmd = c.CreateCommand();
-                cmd.CommandText = "select ID,nom,prenom,pseudo,password,empNconfirme,spec,niveau,email from etudiant,emprunteur where etudiant.numCarte=emprunteur.ID and numCarte='" + ID + "';";
-                reader = cmd.ExecuteReader();
-
-                if (reader.Read())
-                {
-                    etud.ID1 = reader.GetString(0);
-                    etud.Nom = reader.GetString(1);
-                    etud.Prenom = reader.GetString(2);
-                    etud.Pseudo = reader.GetString(3);
-                    etud.Password = reader.GetString(4);
-                    etud.EmpNConfirme = reader.GetByte(5);
-
-                    etud.Specialite = reader.GetString(6);
-                    etud.Niveau = reader.GetString(7);
-                    etud.Email = reader.GetString(8);
-                }
-                c.Close();
-                return etud;
-            }
-            else
-            {
-                c.Close();
-                try
-                {
-                    c.Open();
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                }
-                cmd = c.CreateCommand();
-                cmd.CommandText = "select ID,nom,prenom,pseudo,password,empNconfirme,grade,email from enseignant,emprunteur where enseignant.matricule=emprunteur.ID and matricule='" + ID + "';";
-                reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    ens.ID1 = reader.GetString(0);
-                    ens.Nom = reader.GetString(1);
-                    ens.Prenom = reader.GetString(2);
-                    ens.Pseudo = reader.GetString(3);
-                    ens.Password = reader.GetString(4);
-                    ens.EmpNConfirme = reader.GetInt16(5);
-                    ens.Grade = reader.GetString(6);
-                    ens.Email = reader.GetString(7);
-
-                }
-                c.Close();
-                return ens;
+                throw e;
             }
         }
         //******************************************* modifierCompte ***************************************************//
@@ -448,7 +438,7 @@ namespace Serveur
             {
                 c.Open();
                 MySqlCommand cmd = c.CreateCommand();
-                cmd.CommandText = "update etudiant set spec=@spec,niveau=@niv  where numCarte=@numCarte; update emprunteur set nom=@nom,prenom=@prenom,password=@password,pseudo=@pseudo where ID=@ID;";
+                cmd.CommandText = "update etudiant set specialite=@spec,niveau=@niv  where numCarte=@numCarte; update emprunteur set nom=@nom,prenom=@prenom,password=@password,pseudo=@pseudo,email=@email where ID=@ID;";
                 cmd.Parameters.Add("@spec", MySqlDbType.VarChar).Value = etud.Specialite;
                 cmd.Parameters.Add("@niv", MySqlDbType.VarChar).Value = etud.Niveau;
                 cmd.Parameters.Add("@numCarte", MySqlDbType.VarChar).Value = etud.ID1;
@@ -457,12 +447,13 @@ namespace Serveur
                 cmd.Parameters.Add("@prenom", MySqlDbType.VarChar).Value = etud.Prenom;
                 cmd.Parameters.Add("@Password", MySqlDbType.VarChar).Value = etud.Password;
                 cmd.Parameters.Add("@Pseudo", MySqlDbType.VarChar).Value = etud.Pseudo;
+                cmd.Parameters.Add("@email", MySqlDbType.VarChar).Value = etud.Email;
                 cmd.ExecuteNonQuery();
                 c.Close();
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                throw e;
             }
 
         }
@@ -501,7 +492,7 @@ namespace Serveur
             {
                 c.Open();
                 MySqlCommand cmd = c.CreateCommand();
-                cmd.CommandText = "select ID from etudiant,emprunteur where etudiant.numCarte=emprunteur.ID and pseudo='" + pseudo + "' and password='" + password + "';";
+                cmd.CommandText = "select emprunteur.ID from etudiant,emprunteur where etudiant.numCarte=emprunteur.ID and pseudo='" + pseudo + "' and password='" + password + "';";
                 MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
@@ -538,6 +529,7 @@ namespace Serveur
             catch (Exception e)
             {
                 Console.WriteLine(e);
+                throw e;
             }
 
             return id;

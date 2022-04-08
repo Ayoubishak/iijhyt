@@ -33,9 +33,9 @@ namespace Serveur
         {
             string host = "localhost";
             int port = 3306;
-            string database = "gestempbiblio";
+            string database = "bibliodb";
             string username = "root";
-            string password = "shitana";
+            string password = "dexter-_-07";
 
             return GetDBConnection(host, port, database, username, password);
         }
@@ -155,7 +155,7 @@ namespace Serveur
                 else
                 {
                     conn.Open();
-                    string sqlEns = "insert into enseignant values('" + iD + "','" + grade + "')";
+                    ; string sqlEns = "insert into enseignant values('" + iD + "','" + grade + "')";
                     cmd = conn.CreateCommand();
                     cmd.CommandText = sqlEns;
                     countRow2 = cmd.ExecuteNonQuery();
@@ -534,7 +534,7 @@ namespace Serveur
                 while (input.Read())
                 {
                     numCarte = input.GetString("ID");
-                    specialite = input.GetString("spec");
+                    specialite = input.GetString("specialite");
 
                     niveau = input.GetString("niveau");
 
@@ -774,7 +774,7 @@ namespace Serveur
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.ToString());
             }
             if (countRow1 == 1)
             {
@@ -920,8 +920,15 @@ namespace Serveur
             {
                 c = Conx.GetDBConnection();
                 c.Open();
-
                 MySqlCommand cmd = c.CreateCommand();
+                cmd = c.CreateCommand();
+                cmd.CommandText = "delete from emprunt where IDEmpr='" + codeEmp + "' and codeBarre=" + codeBarre;
+                cmd.ExecuteNonQuery();
+
+                c.Close();
+                c.Open();
+
+                 cmd = c.CreateCommand();
                 cmd.CommandText = "select IDEmpr, priorite from listeattente where codeBarre=" + codeBarre;
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -933,92 +940,51 @@ namespace Serveur
                     }
                 }
                 c.Close();
-            }
-
-
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-
-            Console.WriteLine(Gest.reserver(IDEmpr, codeBarre));//reserver automatiquement l'ouvrage lorsque on trouve un emprunteur dans la liste d'attente attend cet ouvrage(24h)
-
-            try
-            {
-                
+                Console.WriteLine(Gest.reserver(IDEmpr, codeBarre));//reserver automatiquement l'ouvrage lorsque on trouve un emprunteur dans la liste d'attente attend cet ouvrage(24h)
                 c = Conx.GetDBConnection();
                 c.Open();
 
-                MySqlCommand cmd = c.CreateCommand();
-                cmd.CommandText = "select email from emprunteur where ID='" +IDEmpr+"'";
-                MySqlDataReader reader = cmd.ExecuteReader();
+                 cmd = c.CreateCommand();
+                cmd.CommandText = "select email from emprunteur where ID='" + IDEmpr + "'";
+                 reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    email= reader.GetString("email");
+                    email = reader.GetString("email");
                 }
                 c.Close();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-
-
-                    onRendre(email);
-
-
-            try
-            {
+                onRendre(email);
                 c = Conx.GetDBConnection();
                 c.Open();
 
-                MySqlCommand cmd = c.CreateCommand();
+                 cmd = c.CreateCommand();
                 cmd.CommandText = "delete from listeattente where IDEmpr='" + IDEmpr + "' and codeBarre=" + codeBarre;
                 cmd.ExecuteNonQuery();
 
 
                 c.Close();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-
-            try
-            {
                 c = Conx.GetDBConnection();
                 c.Open();
 
-                MySqlCommand cmd = c.CreateCommand();
+                 cmd = c.CreateCommand();
                 cmd.CommandText = "update listeattente set priorite=priorite-1 where codeBarre=" + codeBarre;
                 cmd.ExecuteNonQuery();
 
 
                 c.Close();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-
-            try
-            {
                 c = Conx.GetDBConnection();
-                c.Open();
-
-                MySqlCommand cmd = c.CreateCommand();
-                cmd.CommandText = "delete from emprunt where IDEmpr='" + codeEmp + "' and codeBarre="+codeBarre;
-                    cmd.ExecuteNonQuery();
-            
-             c.Close();
-        }
+         
+            }
             catch (Exception e)
             {
                 Console.WriteLine(e);
+                throw e;
             }
+                return email;
+            
 
 
-            return email;
+
+          
 }
 
 }

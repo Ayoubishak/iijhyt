@@ -1,94 +1,23 @@
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\Emprunteur.csprojAssemblyReference.cache
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\Emprunteur.csproj.GenerateResource.cache
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\Emprunteur.csproj.CoreCompileInputs.cache
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\bin\Debug\IGestEmpBiblio.dll
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\bin\Debug\Serveur.exe
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\bin\Debug\MySql.Data.dll
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\bin\Debug\IGestEmpBiblio.pdb
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\bin\Debug\Serveur.pdb
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\bin\Debug\Serveur.exe.config
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\bin\Debug\MySql.Data.xml
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\Emprunteur.csproj.CopyComplete
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.loginEmp.resources
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.modifierCompte.resources
-D:\master 1\poc\project\GestEmpBibliothèque\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.modifier_Compte.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csprojAssemblyReference.cache
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.Form1.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.loginEmp.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.modifier_Compte.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.modifierCompte.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csproj.GenerateResource.cache
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csproj.CoreCompileInputs.cache
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.exe
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.pdb
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.exe.config
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.exe
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.pdb
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\bin\Debug\IGestEmpBiblio.dll
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.exe
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\bin\Debug\MySql.Data.dll
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\bin\Debug\IGestEmpBiblio.pdb
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.pdb
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.exe.config
-C:\Users\dell\source\repos\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csproj.CopyComplete
-E:\projet 2\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.exe.config
-E:\projet 2\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.exe
-E:\projet 2\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.pdb
-E:\projet 2\GestEmpBibliothèque\Emprunteur\bin\Debug\IGestEmpBiblio.dll
-E:\projet 2\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.exe
-E:\projet 2\GestEmpBibliothèque\Emprunteur\bin\Debug\MySql.Data.dll
-E:\projet 2\GestEmpBibliothèque\Emprunteur\bin\Debug\IGestEmpBiblio.pdb
-E:\projet 2\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.pdb
-E:\projet 2\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.exe.config
-E:\projet 2\GestEmpBibliothèque\Emprunteur\bin\Debug\MySql.Data.xml
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csprojAssemblyReference.cache
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.Form1.resources
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.loginEmp.resources
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.modifier_Compte.resources
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.modifierCompte.resources
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csproj.GenerateResource.cache
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csproj.CoreCompileInputs.cache
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csproj.CopyComplete
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.exe
-E:\projet 2\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.pdb
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csprojResolveAssemblyReference.cache
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.Form1.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.loginEmp.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.modifier_Compte.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.modifierCompte.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csproj.GenerateResource.Cache
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.exe
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.pdb
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.exe.config
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.exe
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.pdb
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\IGestEmpBiblio.dll
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.exe
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\MySql.Data.dll
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\IGestEmpBiblio.pdb
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.pdb
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\MySql.Data.xml
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.exe.config
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.exe
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\WindowsFormsApp2.pdb
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\IGestEmpBiblio.dll
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.exe
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\MySql.Data.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\Google.Protobuf.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\ZstdNet.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\BouncyCastle.Crypto.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\Ubiety.Dns.Core.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\System.Buffers.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\K4os.Compression.LZ4.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\K4os.Hash.xxHash.dll
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\IGestEmpBiblio.pdb
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.pdb
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\Serveur.exe.config
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\bin\Debug\MySql.Data.xml
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\Emprunteur.csprojAssemblyReference.cache
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.exe.config
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.Form1.resources
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.loginEmp.resources
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Emprunteur\obj\Debug\WindowsFormsApp2.modifier_Compte.resources

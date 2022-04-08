@@ -21,57 +21,66 @@ namespace WindowsFormsApp2
         public Form1(IEmprunteur IEmp)
         {
             InitializeComponent();
-            this.IEmp = IEmp;
-            dataGridView1.AutoGenerateColumns = false;
-            dataGridView1.DataSource = IEmp.ConsulterOvrg();
-            
-            
-            listeattente.DataSource = IEmp.listeattente(LoginInfo.id);
-           
-            empruntlist.AutoGenerateColumns = false;
-            empruntlist.DataSource = IEmp.listeemprunt(LoginInfo.id);
-            annulerRecherche.Enabled = false;
-            grade.Hide();
-            spec.Hide();
-            niv.Hide();
-            gradelabel.Hide();
-            speclabel.Hide();
-            nivlabel.Hide();
-           
-            attConf.Text = IEmp.attendreConfirmation(LoginInfo.id).ToString();
-
-            Nemp.Text = IEmp.listeemprunt(LoginInfo.id).Count.ToString();
-            listAtt.Text = IEmp.listeattente(LoginInfo.id).Count.ToString();
-            empNconfirme.Text = IEmp.ConsulterCompte(LoginInfo.id).EmpNConfirme.ToString();
-            if (LoginInfo.type.Equals("ens"))
+            try
             {
-                grade.Show();
-                gradelabel.Show();
-                enseignant ens= (enseignant)IEmp.ConsulterCompte(LoginInfo.id);
-                Nom.Text = ens.Nom;
-                prenom.Text = ens.Prenom;
-                pseudo.Text = ens.Pseudo;
-                email.Text = ens.Email;
-                password.Text = ens.Password;
-                grade.Text = ens.Grade;
+                this.IEmp = IEmp;
+                dataGridView1.AutoGenerateColumns = false;
+                dataGridView1.DataSource = IEmp.ConsulterOvrg();
+
+
+                listeattente.DataSource = IEmp.listeattente(LoginInfo.id);
+
+                empruntlist.AutoGenerateColumns = false;
+                empruntlist.DataSource = IEmp.listeemprunt(LoginInfo.id);
+                annulerRecherche.Enabled = false;
+                grade.Hide();
+                spec.Hide();
+                niv.Hide();
+                gradelabel.Hide();
+                speclabel.Hide();
+                nivlabel.Hide();
+
+                attConf.Text = IEmp.attendreConfirmation(LoginInfo.id).ToString();
+
+                Nemp.Text = IEmp.listeemprunt(LoginInfo.id).Count.ToString();
+                listAtt.Text = IEmp.listeattente(LoginInfo.id).Count.ToString();
+                IEmp.ConsulterCompte(LoginInfo.id).EmpNConfirme.ToString();
+                empNconfirme.Text = IEmp.ConsulterCompte(LoginInfo.id).EmpNConfirme.ToString();
+                if (LoginInfo.type.Equals("ens"))
+                {
+                    grade.Show();
+                    gradelabel.Show();
+                    enseignant ens = (enseignant)IEmp.ConsulterCompte(LoginInfo.id);
+                    Nom.Text = ens.Nom;
+                    prenom.Text = ens.Prenom;
+                    pseudo.Text = ens.Pseudo;
+                    email.Text = ens.Email;
+                    password.Text = ens.Password;
+                    grade.Text = ens.Grade;
+
+                }
+                else
+                {
+                    spec.Show();
+                    speclabel.Show();
+                    niv.Show();
+                    nivlabel.Show();
+                    etudiant etud = (etudiant)IEmp.ConsulterCompte(LoginInfo.id);
+                    Nom.Text = etud.Nom;
+                    prenom.Text = etud.Prenom;
+                    pseudo.Text = etud.Pseudo;
+                    email.Text = etud.Email;
+                    password.Text = etud.Password;
+                    spec.Text = etud.Specialite;
+                    niv.Text = etud.Niveau;
+                }
 
             }
-            else
+            catch (Exception ex)
             {
-                spec.Show();
-                speclabel.Show();
-                niv.Show();
-                nivlabel.Show();
-                etudiant etud=(etudiant)IEmp.ConsulterCompte(LoginInfo.id);
-                Nom.Text = etud.Nom;
-                prenom.Text = etud.Prenom;
-                pseudo.Text = etud.Pseudo;
-                email.Text = etud.Email;
-                password.Text = etud.Password;
-                spec.Text = etud.Specialite;
-                niv.Text = etud.Niveau;
+                MessageBox.Show(ex.ToString());
             }
-            
+           
             
         }
         public void maj()
@@ -110,9 +119,16 @@ namespace WindowsFormsApp2
                 if (dataGridView1.SelectedCells[0].OwningColumn.HeaderText.Equals("codeBarre"))
                 {
                     int codeBarre = Int32.Parse(dataGridView1.SelectedCells[0].Value.ToString());
+                    try
+                    {
+                        String msg = IEmp.reserver(LoginInfo.id, codeBarre);
+                        MessageBox.Show(msg);
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                    }
                     
-                    String msg=IEmp.reserver(LoginInfo.id,codeBarre);
-                    MessageBox.Show(msg);
                 }
                
                 
@@ -199,8 +215,13 @@ namespace WindowsFormsApp2
         {
             if(LoginInfo.type.Equals("etud"))
             {
-                modifier_Compte mc = new modifier_Compte(IEmp,this);
-                mc.Show();
+                modifier_Compte mc = new modifier_Compte(IEmp);
+                
+               var result= mc.ShowDialog();
+                if(result==DialogResult.OK)
+                {
+                    maj();
+                }
             }
             else
             {

@@ -15,9 +15,15 @@ namespace Bibliothècaire
 {
     public partial class login : Form
     {
+        public IEmprunteur obj2;
+        public IBibliothècaire obj;
         public login()
         {
            InitializeComponent();
+            TcpChannel can = new TcpChannel();
+            ChannelServices.RegisterChannel(can, false);
+             obj = (IBibliothècaire)Activator.GetObject(typeof(IBibliothècaire), "tcp://localhost:1069/class1");
+             obj2 = (IEmprunteur)Activator.GetObject(typeof(IEmprunteur), "tcp://localhost:1069/class2");
         }
 
         private void login_Load(object sender, EventArgs e)
@@ -58,30 +64,28 @@ namespace Bibliothècaire
             }
             try
             {
-                TcpChannel can = new TcpChannel();
-                ChannelServices.RegisterChannel(can, false);
-            }
-            catch
-            {
+              
+                // obj.Rendu += obj2.notifierParEmail;
 
-            }
-            IBibliothècaire obj = (IBibliothècaire)Activator.GetObject(typeof(IBibliothècaire), "tcp://localhost:1069/class1");
-            IEmprunteur obj2 = (IEmprunteur)Activator.GetObject(typeof(IEmprunteur), "tcp://localhost:1069/class2");
-            // obj.Rendu += obj2.notifierParEmail;
-          
-            Boolean verifier=obj.authentificationBiblio(pseudoo.Text,password.Text);
-            if (verifier)
-            {
-                MessageBox.Show("connexion succesful");
-                BiblioEspace biblioespace = new BiblioEspace(obj);
+                Boolean verifier = obj.authentificationBiblio(pseudoo.Text, password.Text);
+                if (verifier)
+                {
+                    MessageBox.Show("connexion succesful");
+                    BiblioEspace biblioespace = new BiblioEspace(obj);
 
-                biblioespace.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("connexion failed");
+                    biblioespace.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("connexion failed");
 
+                }
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
         }
 
         private void label1_Click_1(object sender, EventArgs e)

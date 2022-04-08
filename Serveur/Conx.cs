@@ -13,9 +13,9 @@ namespace Serveur
         {
             string host = "localhost";
             int port = 3306;
-            string database = "gestempbiblio";
+            string database = "bibliodb";
             string username = "root";
-            string password = "shitana";
+            string password = "dexter-_-07";
 
             return DBConx.GetDBConnection(host, port, database, username, password);
         }

@@ -1,76 +1,23 @@
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.exe.config
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.exe
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.pdb
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\bin\Debug\IGestEmpBiblio.dll
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\bin\Debug\IGestEmpBiblio.pdb
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csprojAssemblyReference.cache
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csproj.CoreCompileInputs.cache
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csproj.CopyComplete
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.exe
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.pdb
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.login.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.Properties.Resources.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csproj.GenerateResource.cache
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.BiblioEspace.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.Emprunt.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.AjouterCompte.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.AjouterOuvrage.resources
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.exe
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\bin\Debug\MySql.Data.dll
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.pdb
-C:\Users\dell\source\repos\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.exe.config
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.exe.config
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.exe
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.pdb
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\bin\Debug\IGestEmpBiblio.dll
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.exe
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\bin\Debug\MySql.Data.dll
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\bin\Debug\IGestEmpBiblio.pdb
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.pdb
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.exe.config
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csprojAssemblyReference.cache
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.AjouterCompte.resources
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.AjouterOuvrage.resources
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.BiblioEspace.resources
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.Emprunt.resources
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.login.resources
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.Properties.Resources.resources
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csproj.GenerateResource.cache
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csproj.CoreCompileInputs.cache
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csproj.CopyComplete
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.exe
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.pdb
-E:\projet 2\GestEmpBibliothèque\Bibliothècaire\bin\Debug\MySql.Data.xml
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csprojResolveAssemblyReference.cache
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.AjouterCompte.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.AjouterOuvrage.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.BiblioEspace.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.Emprunt.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.login.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.Properties.Resources.resources
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csproj.GenerateResource.Cache
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.exe
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.pdb
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.exe.config
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.exe
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.pdb
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\IGestEmpBiblio.dll
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.exe
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\MySql.Data.dll
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\IGestEmpBiblio.pdb
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.pdb
-E:\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\MySql.Data.xml
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.exe.config
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.exe
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Bibliothècaire.pdb
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\IGestEmpBiblio.dll
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.exe
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\MySql.Data.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Google.Protobuf.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\ZstdNet.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\BouncyCastle.Crypto.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Ubiety.Dns.Core.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\System.Buffers.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\K4os.Compression.LZ4.dll
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\K4os.Hash.xxHash.dll
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\IGestEmpBiblio.pdb
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.pdb
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\Serveur.exe.config
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\bin\Debug\MySql.Data.xml
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.csprojAssemblyReference.cache
+E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.exe.config
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.AjouterCompte.resources
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.AjouterOuvrage.resources
 E:\Development\programming project\Gestion Biblo\GestEmpBibliothèque\Bibliothècaire\obj\Debug\Bibliothècaire.BiblioEspace.resources

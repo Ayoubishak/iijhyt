@@ -16,10 +16,8 @@ namespace WindowsFormsApp2
     public partial class modifier_Compte : Form
     {
         IEmprunteur IEmp;
-        Form1 m;
-        public modifier_Compte(IEmprunteur IEmp,Form1 m)
+        public modifier_Compte(IEmprunteur IEmp)
         {
-            this.m = m;
             InitializeComponent();
             this.IEmp = IEmp;
             etudiant etud = (etudiant)IEmp.ConsulterCompte(LoginInfo.id);
@@ -32,6 +30,14 @@ namespace WindowsFormsApp2
             niveau.Text = etud.Niveau;
 
         }
+
+        public delegate void RefreshInfo();
+        public  RefreshInfo RefEtudInfo;
+        public void OnUpdateInfo()
+        {
+            RefEtudInfo?.Invoke();
+        }
+
 
         private void enregistrer_Click(object sender, EventArgs e)
         {
@@ -55,9 +61,19 @@ namespace WindowsFormsApp2
                 etud.Email = email.Text;
                 etud.Specialite = spec.Text;
                 etud.Niveau = niveau.Text;
+                etud.NumCarte = LoginInfo.id;
                 Console.WriteLine("modifercompte");
-                IEmp.modifierCompte(etud);
-                m.maj();
+                try
+                {
+                    IEmp.modifierCompte(etud);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+          
+                //m.maj();
+                this.DialogResult = DialogResult.OK;
                 this.Close();
                
 
